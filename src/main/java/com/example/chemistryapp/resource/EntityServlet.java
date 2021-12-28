@@ -1,5 +1,6 @@
 package com.example.chemistryapp.resource;
 
+import com.example.chemistryapp.entity.ChemistryEntity;
 import com.example.chemistryapp.service.ChemistryService;
 
 import javax.inject.Inject;
@@ -18,9 +19,11 @@ public class EntityServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
+        ChemistryEntity entity = chemistryService.getChemistry(Long.valueOf(req.getParameter("id")));
         PrintWriter out = resp.getWriter();
         out.println("<html><body>");
-        out.println("<h1>" + chemistryService.getChemistry(Long.valueOf(req.getParameter("id"))) + "</h1>");
+        out.println("<h1>" + "Id - " + entity.getId() + "</h1>");
+        out.println("<h1>" + "Label - " + entity.getName() + "</h1>");
         out.println("</body></html>");
     }
 }

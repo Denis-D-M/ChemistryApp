@@ -25,7 +25,7 @@ public class MainServlet extends HttpServlet {
         out.println("<html><body>");
         List<ChemistryEntity> allChemistry = chemistryService.getAllChemistry();
         for (ChemistryEntity chemistry : allChemistry) {
-            out.println("<a href=\"entity-servlet?id=" + chemistry.getId() + "\">" + chemistry + "</h1>");
+            out.println("<a href=\"entity-servlet?id=" + chemistry.getId() + "\">" + chemistry.getName() + "</a><br><br>");
         }
         out.println("</body></html>");
     }
