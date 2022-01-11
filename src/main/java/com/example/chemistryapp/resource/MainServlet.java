@@ -27,6 +27,11 @@ public class MainServlet extends HttpServlet {
         for (ChemistryEntity chemistry : allChemistry) {
             out.println("<a href=\"entity-servlet?id=" + chemistry.getId() + "\">" + chemistry.getName() + "</a><br><br>");
         }
+
+        out.println("<form action=\"add-servlet\" method=\"get\">");
+        out.println("<input type=\"text\" name=\"id\" placeholder=\"type id\" />");
+        out.println("<input type=\"text\" name=\"label\" placeholder=\"type label\" />");
+        out.println("<input type=\"submit\" value=\"ok\" />");
         out.println("</body></html>");
     }
 

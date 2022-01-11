@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 @Data
 @ToString
-@Entity
+@Entity(name = "CHEMISTRY_ENTITY")
 public class ChemistryEntity {
 
     @Id
