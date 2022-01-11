@@ -17,7 +17,7 @@ import java.util.List;
 public class MainServlet extends HttpServlet {
 
     @Inject
-    protected ChemistryService chemistryService;
+    private ChemistryService chemistryService;
 
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");

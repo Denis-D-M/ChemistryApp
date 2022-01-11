@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 @WebServlet(value = "/entity-servlet", urlPatterns = "/entity-servlet")
 public class EntityServlet extends HttpServlet {
     @Inject
-    protected ChemistryService chemistryService;
+    private ChemistryService chemistryService;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
