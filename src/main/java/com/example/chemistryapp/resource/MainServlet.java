@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-import java.util.Locale;
 
 
 @WebServlet(value = "/hello-servlet", urlPatterns = "/hello-servlet")

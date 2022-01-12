@@ -3,7 +3,6 @@ package com.example.chemistryapp.resource;
 import com.example.chemistryapp.service.ChemistryService;
 
 import javax.inject.Inject;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
