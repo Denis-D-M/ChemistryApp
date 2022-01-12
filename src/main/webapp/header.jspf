@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Chemistry webshop</title>
-</head>
 <style>
     .header {
         padding: 30px;
-        text-align: center;
+        text-align: left;
         background: #1abc9c;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
     }
 </style>
-<body>
 <div class="header">
-    <h1>Webshop</h1>
-    <p>chemistry webshop</p>
+    <h1>Оптовый склад бытовой химии</h1>
 </div>
-</body>
-</html>
+

@@ -16,5 +16,15 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-snapshots" />
+      <option name="name" value="Maven repository for snapshot artifacts" />
+      <option name="url" value="https://nexus-epminsr-sinaps-cicd.tpdev.ru/repository/maven-snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-releases" />
+      <option name="name" value="Maven repository for release artifacts" />
+      <option name="url" value="https://nexus-epminsr-sinaps-cicd.tpdev.ru/repository/maven-releases" />
+    </remote-repository>
   </component>
 </project>
